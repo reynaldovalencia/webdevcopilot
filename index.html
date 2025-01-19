@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>My Web Page</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="home">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#" class="nav-branding">Portafolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <!-- hero -->
+        <div class="hero">
+            <div class="hero-banner">
+                <h1>I am a Developer</h1>
+                <p>My name is Reynaldo Valencia and I am a web developer that works in C#, Blazor, HTML, JavaScript,
+                    CSS y SQL Server</p>
+                <a href="#featured" class="btn hero-btn scroll-link">View my Projects</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ABOUT ME -->
+
+    <section class="section" id="about-me">
+        <div class="section-title">
+            <h2>About <span>Me</span></h2>
+        </div>
+        <div class="section-center about-center">
+            <style>
+                .about-img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .about-photo {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 0;
+                    max-width: 100%;
+                    height: auto;
+                }
+            </style>
+            <article class="about-img">
+                <img src="./image/developer.jpg" class="about-photo" alt="awesome dev">
+            </article>
+            <article class="about-info">
+                <h3 class="section-title">Web Developer</h3>
+                <p>Hello! I'm Reynaldo Valencia, a web developer with a passion for creating interactive and
+                    user-friendly
+                    websites. I
+                    have experience in HTML, CSS, JavaScript, and various web development frameworks. In my free
+                    time, I
+                    enjoy learning new technologies and improving my coding skills.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <ul>
+            <li>
+                <h3 class="section-title">Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc nec nisl eleifend ultricies.
+                </p>
+            </li>
+            <li>
+                <h3 class="section-title">Project 2</h3>
+                <p>Proin eget justo nec justo ultricies fermentum. Nullam nec nunc nec nisl eleifend ultricies.</p>
+            </li>
+            <li>
+                <h3 class="section-title">Project 3</h3>
+                <p>Donec nec justo nec justo ultricies fermentum. Nullam nec nunc nec nisl eleifend ultricies.</p>
+            </li>
+        </ul>
+
+        <article>
+            <h2 class="section-title">About Us</h2>
+            <p>We are a team of passionate developers dedicated to creating amazing web applications. Our goal is to
+                deliver high-quality software that meets the needs of our clients.</p>
+        </article>
+        <section id="skills"></section>
+        <h2 class="section-title">Skills</h2>
+
+        <ul>
+            <li class="list-item">HTML</li>
+            <li class="list-item">CSS</li>
+            <li class="list-item">JavaScript</li>
+            <li class="list-item">React</li>
+            <li class="list-item">Node.js</li>
+            <li class="list-item">Python</li>
+            <li class="list-item">Git</li>
+        </ul>
+    </section>
+
+
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=1" alt="Random Image 1">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=2" alt="Random Image 2">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=3" alt="Random Image 3">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=4" alt="Random Image 4">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=5" alt="Random Image 5">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=6" alt="Random Image 6">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=7" alt="Random Image 7">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=8" alt="Random Image 8">
+            <img class="gallery-item" src="https://loremflickr.com/200/200?random=9" alt="Random Image 9">
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 My Website. All rights reserved.</p>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
